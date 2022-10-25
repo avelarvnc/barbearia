@@ -1,0 +1,64 @@
+<html lang="pt-br">
+
+    <head>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=K2D&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+        <header>
+            <h1>Barbearia</h1>
+            <span id="botao_menu" class="material-icons md-48" onclick="controlarMenu()">menu</span>
+            <nav id="menu_navegacao">
+                <ul>
+                    <li><a href="">Início</a></li>
+                    <li><a href="">Sobre nós</a></li>
+                    <li><a href="">Serviços</a></li>
+                    <li><a href="">Agenda</a></li>
+                    <li><span id="botao_fechar" class="material-icons" onclick="controlarMenu()">close</span></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <section class="area_banner">
+                <img src="img/banner.jpg" alt="um barbeiro aparando a barba de um cliente sentado na cadeira utilizando uma tesoura">
+            </section>
+
+            <section class="area_servicos">
+                <article class="card_servico">
+                    <h2>Corte masculino</h2>
+                    <div class="card_servico_conteudo">
+                        <img src="img/card-cortecabelo.jpg" alt="a definir">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla leo sit amet tincidunt tincidunt. Etiam posuere gravida elit et mollis. Praesent posuere, nulla id sodales vehicula, ipsum turpis dignissim turpis, id placerat turpis nulla vitae magna. </p>
+                    </div>
+                   
+                </article>
+            </section>
+
+        </main>
+
+        <script>
+            function controlarMenu(){
+
+                if (menu_navegacao.style.display == 'none'){
+                    menu_navegacao.style.display = 'flex'
+                    botao_menu.style.display = 'none'
+                }
+                else{
+                    menu_navegacao.style.display = 'none'
+                    botao_menu.style.display = 'block'
+                }
+                
+            }
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --branco: #FFF;
+    --cinza-medio: #2C2C2C;
+    --cinza-escuro: #1A1A1A;
+}
+
+body{
+    color: var(--branco);
+    background-color: var(--cinza-escuro);
+    font-family: 'K2D', sans-serif;
+}
+
+h1{
+    font-size: 3.5rem;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+p{
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    margin-top: 24px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--branco);
+}
+
+.md-48{
+    font-size: 48px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cinza-medio);
+    padding: 24px;
+}
+
+nav{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 90vh;
+    position: absolute;
+    right: 0;
+    padding: 35% 24px 10% 0;    
+    text-align: right;
+    background-color: var(--cinza-medio);
+}
+
+#botao_fechar{
+    margin-top: 48px;
+}
+
+.area_banner{
+    margin: 24px;
+    border-radius: 15px;
+}
+
+.area_banner img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.area_servicos{
+    margin: 24px;
+}
+
+.card_servico{
+    background-color: var(--cinza-medio);
+    border-radius: 15px;
+    padding: 24px;
+    text-align: center;
+}
+
+.card_servico img{
+    border-radius: 15px;
+    margin: 24px 16px 24px 0;
+}
+
+@media screen and (min-width: 1024px)
+{
+
+    #botao_menu{
+        display: none;
+    }
+
+    nav{
+        display: block;
+        position: relative;
+        z-index: 0;
+        width: auto;
+        padding: 0;
+        text-align: right;
+        background-color: var(--cinza-medio);
+    }
+
+    li{
+        display: inline;
+        margin-left: 24px;
+    }
+
+    #botao_fechar{
+        display: none;
+    }
+    
+
+    .card_servico{
+        text-align: left;
+    }
+
+    .card_servico_conteudo{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
